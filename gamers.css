@@ -1,0 +1,396 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+.whole {
+  color: whitesmoke;
+  background: radial-gradient(
+    65.28% 65.28% at 50% 34.72%,
+    #3c0d61 0%,
+    #010912 100%
+  );
+}
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.enkulogo {
+  height: 50px;
+  width: 100px;
+}
+.girl {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+.boy {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+  background: radial-gradient(
+    65.28% 65.28% at 50% 34.72%,
+    rgba(37, 6, 6, 0.87) 0%,
+    #0b0706 100%
+  );
+  color: whitesmoke;
+}
+.imagef {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
+.imagef img {
+  height: 500px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.imagem {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
+.imagem img {
+  height: 500px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.modelr {
+  transform: translate(0%, -10%);
+}
+.modell {
+  transform: translate(0%, 10%);
+}
+.model{
+  display: none;
+}
+.imagef:hover .modelr {
+  transform: translate(0%, 0%);
+}
+.imagef:hover .modell {
+  transform: translate(0%, 0%);
+}
+.imagem:hover .modelr {
+  transform: translate(0%, 0%);
+}
+.imagem:hover .modell {
+  transform: translate(0%, 0%);
+}
+.details {
+  grid-column: 2/3;
+  align-self: end;
+}
+.details h3 {
+  font-size: 48px;
+  font-weight: 500;
+}
+.details h6 {
+  font-size: 25px;
+  font-weight: 300;
+  padding: 10px 0px 70px 5px;
+}
+.pages {
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pages div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pages h4 {
+  font-size: small;
+  padding: 0px 2px 15px 0px;
+}
+.pages svg {
+  cursor: pointer;
+  padding: 0px 2px 15px 0px;
+}
+.pages svg:hover {
+  animation: dot 0.5s ease-in-out infinite alternate;
+}
+.pages svg.active {
+  opacity: 1;
+}
+@keyframes dot {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
+
+.about {
+  min-height: 110vh;
+  display: flex;
+  background: radial-gradient(50% 50% at 50% 50%, #0d2961 0%, #000000 100%);
+  color: whitesmoke;
+}
+.aboutus {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about h3 {
+  flex: 1;
+  font-size: 48px;
+  font-weight: 900px;
+  text-align: center;
+  margin: 0px 0px 15px 0px;
+}
+.about p {
+  flex: 2;
+  flex-direction: row;
+  max-width: 50%;
+  text-align: center;
+  margin: 4rem 0px 0px 5rem;
+}
+.aboutus p {
+  color: aliceblue;
+}
+.knowmore {
+  flex: 1;
+  margin: 4rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: aliceblue;
+  font-size: x-large;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+.knowmore:hover {
+  color: #ffb9b9;
+  transform: translateY(20%);
+  text-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+.cover {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+}
+.cover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: default;
+}
+.logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  height: 100px;
+  width: 200px;
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%);
+}
+main {
+  width: 90%;
+  margin: auto;
+}
+p {
+  color: #303030;
+  font-weight: 400;
+  font-size: large;
+}
+.content {
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 5%;
+  grid-template-rows: 0.5fr 0.8fr 0.7fr 0.7fr 0.3fr 0.7fr 0.5fr 0.1fr;
+  grid-template-areas:
+    ". aboutenku aboutenku ."
+    ". pic aboutpic ."
+    ". abouthealth yogapic ."
+    ". picsocial aboutsocial ."
+    ". dyk dyk ."
+    ". aboutvs vs ."
+    ". young young ."
+    ". piclove piclove .";
+}
+.aboutenku {
+  grid-area: aboutenku;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  font-size: x-large;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.pic {
+  grid-area: pic;
+  height: 95%;
+  width: 40%;
+  justify-self: center;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+  border-radius: 13px;
+}
+.pic img {
+  grid-area: pic;
+  height: 100%;
+  width: 100%;
+  border-radius: 13px;
+}
+.aboutpic {
+  grid-area: aboutpic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.aboutpic h4 {
+  font-size: larger;
+  font-weight: 500;
+}
+.abouthealth {
+  grid-area: abouthealth;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+}
+.yogapic {
+  grid-area: yogapic;
+  height: 70%;
+  width: 70%;
+  justify-self: center;
+  align-self: center;
+}
+.yogapic img {
+  height: 100%;
+  width: 100%;
+}
+.picsocial {
+  grid-area: picsocial;
+  height: 85%;
+  width: 85%;
+  justify-self: center;
+  align-self: center;
+}
+.picsocial svg {
+  height: 100%;
+  width: 100%;
+}
+.aboutsocial {
+  grid-area: aboutsocial;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+}
+.aboutsocial a {
+  text-decoration: none;
+  font-weight: 450;
+  cursor: pointer;
+  color: #cb4900;
+}
+.dyk {
+  grid-area: dyk;
+  align-self: center;
+  justify-self: center;
+  width: 95%;
+}
+.aboutvs {
+  grid-area: aboutvs;
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+}
+.vs {
+  grid-area: vs;
+  width: 70%;
+  height: 70%;
+  align-self: center;
+  justify-self: center;
+}
+.vs img {
+  width: 100%;
+  height: 100%;
+}
+.young {
+  grid-area: young;
+  width: 95%;
+  align-self: center;
+  justify-self: center;
+}
+.piclove {
+  grid-area: piclove;
+  justify-self: center;
+  align-self: center;
+  height: 50%;
+  width: 50%;
+}
+.piclove img {
+  height: 100%;
+  width: 100%;
+  margin: -35px 0px -35px 0px;
+
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer h1 {
+  font-family: "Dancing Script", cursive;
+}
+@media screen and (max-width:768px){
+  .girl{ 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr;
+
+  }
+  .modell{
+    display: none;
+  }
+  .modelr{
+    display: none;
+  }
+  .model{
+    display: block;
+    grid-column: 2/3;
+    margin: auto;
+  }
+  .boy{
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  .details{
+    grid-row: 2/3;
+  }
+  .pages{
+    display: none;
+  }
+}

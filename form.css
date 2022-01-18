@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(
+    107.05deg,
+    rgba(82, 255, 245, 0.76) 0%,
+    #ff8585 52.08%,
+    rgba(253, 177, 255, 0.75) 100%
+  );
+  background-repeat: none;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 22vw;
+  height: 65vh;
+  position: absolute;
+  background: linear-gradient(
+    156.04deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 253, 253, 0.12) 100%
+  );
+  backdrop-filter: blur(70px);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(70px);
+  border-radius: 27px;
+}
+h1 {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 64px;
+  font-size: xx-large;
+  cursor: default;
+}
+h2{
+  margin-bottom: 14px;
+  cursor: default;
+}
+.user{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 35px;
+  padding: 12px;
+  top: 100px;
+}
+.user input{
+  font-size: x-large;
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+}
+.pass{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 35px;
+  padding: 12px;
+  top: 150px;
+}
+.pass input{
+  font-size: x-large;
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+  background: transparent;
+}
+button {
+  position: relative;
+  width: 245px;
+  height: 55px;
+  background: #EDABAB;
+  border: 5px solid #ff9e9e;
+  box-sizing: border-box;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 39px;
+  outline: none;
+  transition: 0.4s ease-in-out;
+  bottom: -190px;
+  left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover{
+  cursor: pointer;
+ transform: translateY(10px)
+}
+button::after{
+content: "";
+
+}
+button:active{
+  background-color: rgb(255, 250, 250);
+ }
+
+.forgot a{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: -180px;
+  text-emphasis: none;
+  text-decoration: none;
+  color: #00648E;
+}
+.loginusing{
+display: flex;
+justify-content: center;
+position: relative;
+bottom: 5px;
+bottom: -300px;
+font-size: x-large;
+}
+.fb{
+  padding: 12px;
+}
+.apple{
+  padding: 12px;
+}
+.google{
+  padding: 12px;
+}
+.forget:link{
+  text-emphasis: none;
+  text-decoration: none;
+}

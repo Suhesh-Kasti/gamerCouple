@@ -1,0 +1,223 @@
+*{
+    margin:0;
+    padding=0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(252.79deg, #FF83DC -0.85%, #FFB5EF -0.84%, #D7D9EB 23.31%, #AEFFE7 48.13%, rgba(255, 136, 136, 0.51) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.glass{
+    background: linear-gradient(109.2deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 100%);
+    backdrop-filter: blur(100px);
+    min-height: 828px;
+    min-width:1403px ;
+    border-radius: 50px;
+    z-index: 3;
+    display: flex;
+}
+.circle1, .circle2{
+    position: absolute;
+    border-radius: 100%;
+    background: linear-gradient(109.2deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(2rem);
+    z-index: 1;
+}
+.circle1{
+    width: 353px;
+    height: 348px;
+    left: 1600px;
+    top: 112px;    
+}
+.circle2{
+    width: 415px;
+    height: 412px;
+    left: 0px;
+    top: 550px;
+}
+.dashboard{
+    margin: auto;
+    min-height: 828px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: linear-gradient(109.2deg, rgba(255, 255, 255, 0.48) 0%, rgba(255, 255, 255, 0.12) 100%);
+backdrop-filter: blur(100px);
+border-radius: 50px 0px 0px 50px;
+
+}
+.side{
+    flex: 3;
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.character{
+    margin-top: 50px ;
+    padding: 10px;
+}
+.character h2{
+    font-weight: 600;
+    font-style: italic;
+    color: #887E25;  
+    opacity: 0.9;
+}
+.character p{
+    color: #B2AA59;
+    font-weight: 400;
+}
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.link h1{
+    padding: 30px;
+    color: #AA8282;
+}
+.link a{
+    text-decoration: none;
+}
+.card-info a{
+    text-decoration: none;
+}
+button{
+    
+width: 296px;
+height: 96px;
+
+background: linear-gradient(265.89deg, #E5CCEC -1.58%, #FD8DFF -1.57%, rgba(255, 159, 245, 0.5) 44.45%, rgba(245, 229, 244, 0.52714) 100%);
+box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.50);
+border-radius: 211px;
+border:  salmon;
+outline: none;
+}
+button h1{
+display: flex;
+font-style: normal;
+font-weight: bold;
+font-size: 27px;
+align-items: flex-end ;
+cursor: pointer;
+color: #c45974;
+transform: rotate(-0.47deg);
+}
+.smedia{
+    display: flex;
+    align-items: center;
+}
+.fb{
+    margin: 5px;
+    padding: 10px;
+}
+.tweet{
+    margin: 5px;
+    padding: 10px;
+}
+.insta{
+    margin: 5px;
+    padding: 10px;
+}
+.reddit{
+    margin: 5px;
+    padding: 10px;
+}
+.last{
+    position: absolute;
+    top: 7%;
+    right: 45% ;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: oblique;
+    color: #898B10;
+    opacity: 0.7;
+}
+.top .last{
+    display: flex;
+    justify-content: space-between;
+}
+
+.search input{
+    position: absolute;
+    background-color: ;
+    backdrop-filter: blur(250px);
+    border-radius: 89px;
+    border:3px solid #58E1EA;
+    height: 50px;
+    width: 350px;
+    outline: none;
+    padding: 15px;
+    font-size: x-large;
+}
+.search{
+    position: absolute;
+    top: 10%;
+    right: 30%;
+}
+
+.search ::placeholder{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px;
+}
+.cards{
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card{
+    display: flex;
+    border-radius: 3rem;
+    background: linear-gradient(to left top, rgba(255,255,255,0.2),rgba(255,255,255,0.8));
+    margin: 1rem 0rem;
+padding: 2rem;
+box-shadow: 9px 9px 10px rgba(0, 0, 0, 0.14);
+justify-content: space-between;
+}
+ .progress{
+    margin-top: 5px;
+ }
+ .card p{
+     font-size: smaller;
+     color: green;
+     margin: 0%;
+     padding: 0%;
+ }
+ .time{
+     display: flex;
+     align-items: center;
+     color: #3D83D6;
+     font-size: 1.5rem;
+ }
+ .card-info{
+     position: absolute;
+     left:35rem;
+ }
+ .card-info h2{
+     text-decoration: none;
+     color: black;
+     font-weight: 500;
+     font-size: x-large;
+ }
+ .magnify{
+     position: absolute;
+     top: 12px;
+     right: -24rem;
+     z-index: 5;
+ }
+ @media screen and (max-width=768px){
+    .glass{
+        height: 200px;
+        width: 400px;
+    }
+ }
